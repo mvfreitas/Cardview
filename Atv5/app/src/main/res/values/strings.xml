@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="txt_login_title">Login</string>
+    <string name="txt_login_btn_login">Login</string>
+    <string name="txt_login_subtitle">Tela de login que utiliza usuário e senha para autenticação baseado em SQLite</string>
+    <string name="txt_field_required">Campos Obrigatórios</string>
+    <string name="txt_credentials_wrong">Usuário e/ou Senha inválidos</string>
+    <string name="txt_login_hint_user">Digite seu usuário</string>
+    <string name="txt_login_hint_password">Digite sua senha</string>
+    <string name="txt_login_hint_confirm_password">Repita sua senha</string>
+    <string name="login_txt_new_user">Novo usuário</string>
+
+    <string name="txt_create_user_title">Usuários</string>
+    <string name="txt_create_user_subtitle">Tela de cadastro de novos usuários do aplicativo</string>
+    <string name="txt_create_user_btn_save">Salvar</string>
+    <string name="txt_create_user_password_not_the_same">As senhas devem ser idênticas</string>
+    <string name="txt_create_user_created_successful">Usuário criado com sucesso</string>
+    <string name="txt_create_user_not_created">Erro ao criar usuário</string>
+
+    <string name="txt_dashboard_menu_logout">Sair</string>
+    <string name="txt_dashboard_list_users">Listar usuários</string>
+</resources>
