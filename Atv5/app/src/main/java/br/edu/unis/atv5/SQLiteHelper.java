@@ -57,6 +57,25 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    public boolean deleteUser(long id ,String user, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        try {
+            db.beginTransaction();
+            ContentValues values = new ContentValues();
+            values.put("user", user);
+            values.put("password", password);
+            String where = "id=" + id;
+            db.delete(DB_TABLE, where, null);
+            db.setTransactionSuccessful();
+            Log.i("USER_DELETED","ID: " + id);
+        } catch (SQLException e) {
+            Log.e("ERROR_USER_DELETE", "deleteUser: " + e.getMessage(), e);
+        } finally {
+            if (db.isOpen()) db.endTransaction();
+        }
+        return true;
+    }
+
     public boolean authenticateUser(String user, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         String[] columns = { "user" };
